@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* background-color: #7743DB; */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 0.6699054621848739) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.wrapper h1 {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.wrapper p {
+  text-align: center;
+  margin-top: 7px;
+  font-weight: bold;
+  color: white;
+}
+
+.wrapper .main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.wrapper .form-container {
+  width: 450px;
+  background-color: #f7efe5;
+  margin: 20px auto;
+  padding: 50px;
+}
+
+.select-field {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  border: 1px solid #dee2e6;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 0.375rem;
+}
+
+.select-field:focus {
+  color: #212529;
+  border-color: #86b7fe;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.wrapper .form-container .btn {
+  width: 100%;
+  color: #fff;
+  background-color: rgba(2, 0, 36, 1);
+}
+
+.wrapper .view-container {
+  width: 740px;
+  background-color: #f6f1e9;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+tbody {
+  margin-top: 25px;
+}
+
+.without__product__heading {
+  text-align: center;
+  margin: 0;
+  color: #212529;
+}
+
+thead,
+tr {
+  text-align: center;
+}
+.table > thead {
+  vertical-align: top !important;
+}
+
+@media only screen and (max-width: 1230px) {
+  .wrapper .main {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper .form-container {
+    width: 350px;
+    margin: 20px auto;
+    padding: 30px;
+  }
+
+  .wrapper .view-container {
+    width: 550px;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  .wrapper .form-container {
+    width: 350px;
+  }
+
+  .wrapper .view-container {
+    width: 350px;
+    padding: 10px 0;
+  }
+}
+
